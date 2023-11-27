@@ -17,8 +17,8 @@ readdirSync("./routes").map((file)=>app.use("/",require("./routes/"+file)))
  app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
-app.get('/onay', (req, res) => {
-  res.sendFile(__dirname + '/public/onay.html');
+app.get('/yukle', (req, res) => {
+  res.sendFile(__dirname + '/public/yukle.html');
 });
  app.get('onay.png', (req, res) => {
   res.sendFile(__dirname + '/public/onay.png');
